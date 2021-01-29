@@ -1,0 +1,39 @@
+{
+  // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Print to for": {
+    "prefix": "for",
+    "body": [
+      "for (var ${1:index} = 0; ${1:index} < ${2:array.length}; ${1:index}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Print to for"
+  },
+  "forIn": {
+    "prefix": "forin",
+    "body": "for (const ${1:item} in ${2:object}) {\n\t${0}\n}"
+  },
+  "FileHeader Comment": {
+    "prefix": "fz",
+    "body": [
+      "/*",
+      " * @Author: ${1:cheng}",
+      " * @Date:   $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE",
+      " * @Last Modified by: $2",
+      " * @Last Modified time: 2021-${3:month}-${4:date}",
+      " */"
+    ]
+  }
+}
